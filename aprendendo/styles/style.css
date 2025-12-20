@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    height: 90vh;
+}
+
+h1 {
+    position: absolute;
+    color: orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
