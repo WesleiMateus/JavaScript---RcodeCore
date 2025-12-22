@@ -13,7 +13,7 @@ showInfosBtn.addEventListener("click", () => {
         return new Promise((res, rej) => {
             setTimeout(() => {
                 res({ name: "weslei", age: 20 }),
-                    rej("501 - Internal Server Error")
+                rej("501 - Internal Server Error")
             }, 3000)
         })
     }
