@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            gap: 1rem;
+        }
+
+        form input, button {
+            padding: .4rem;
+        }
+
+        p, a {
+            font-weight: bold;
+            color: black;
+        }
+
+        .container-response {
+            margin-top: 3rem;
+            width: 1440px;
+            overflow: hidden;
+        }
+
+    </style>
+
 </head>
 <body>
 
-    <button id="btn">Mostrar Usuário</button>
+    <form action="#">
+        <label for="pokemon">Selecione o pokemon: </label>
+        <input type="text" id="pokemon" name="pokemon">
+        <button id="btn">Buscar</button>
+
+        <div class="container-response">
+            <h2 id="status"></h2>
+
+            <p id="name"></p>
+            <p id="height"></p>
+            <a id="sprite"></a>
+        </div>
+
+    </form>
+
 
     <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="buscarPokemonAsync.js"></script>
+    <script src="buscarPoke2.js"></script>
 </body>
 </html>
